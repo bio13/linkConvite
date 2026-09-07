@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Maria Clara</title>
+</head>
+
+<body>
+
+<script>
+    const numero = "5585988667435";
+
+    const mensagem = `Olá! Estou confirmando minha presença na festa da Maria Clara! 🎂🐾
+Cada criança convidada poderá trazer papai, mamãe e irmão/irmã! 👨‍👩‍👧‍👦
+*ATENÇÃO PATRULHEIROS(AS)! LEMBRANDO QUE CONVIDADO NÃO CONVIDA!*`;
+
+    const url = new URL(`https://wa.me/${numero}`);
+    url.searchParams.set("text", mensagem);
+
+    window.location.replace(url.toString());
+</script>
+
+</body>
+</html>
