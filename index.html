@@ -147,6 +147,16 @@
             background: #c94e9d;
         }
 
+        .alert {
+    background: #fce8f2;
+    display: flex;
+    justify-content: center;
+    padding: 12px 15px;
+    border-left: 5px solid #cc60ac;
+    border-radius: 10px;
+    color: #cc60ac;
+        }
+
         @media (max-width: 600px) {
 
             body {
@@ -199,7 +209,10 @@
                 </button>
 
             </div>
-
+            
+           <div class="alert">
+               <p>Atenção, patrulheiro(a)! Só lembrando que convidado não convida, combinado? 😉 </p>
+           </div>
 
             <button type="submit">
                 Confirmar Presença
@@ -261,14 +274,7 @@
             }
 
 
-            const mensagem = `Olá! 😊 Estou passando para confirmar a presença na festa da Maria Clara! 🎂🐾
-
-Cada criança convidada poderá vir acompanhada do papai, da mamãe e de irmão(ã), se desejar.
-
-*ATENÇÃO, PATRULHEIROS(AS)! 🐾 Lembrando que convidado não convida.*
-
-Criança: ${nomeCrianca}
-Acompanhantes: ${acompanhantesSelecionados}`;
+            const mensagem = `Olá! Estou passando para confirmar a presença de ${nomeCrianca} na festa da Maria Clara! A quantidade de acompanhantes é: ${acompanhantesSelecionados} 🎂🐾`;
 
 
             const url =
